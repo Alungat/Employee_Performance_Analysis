@@ -134,7 +134,7 @@ try:
         # Display basic information
         st.write("### Data Information")
         buffer = io.StringIO()
-        df.info(buf=buffer)
+        data.info(buf=buffer)
         s = buffer.getvalue()
         st.text(s)
 
