@@ -12,7 +12,6 @@ import warnings
 
 # Ignore Warnings
 warnings.filterwarnings('ignore')
-st.set_option('deprecation.showPyplotGlobalUse', False)
 
 st.set_page_config(
     page_title="Employee Performance Evaluation App",
