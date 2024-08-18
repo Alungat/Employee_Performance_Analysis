@@ -1,0 +1,12 @@
+GitPython
+ipykerne
+ipython
+markdown-it-py
+matplotlib
+matplotlib-inline
+numpy
+pandas
+scikit-learn
+scipyseaborn
+streamlit
+openpyxl 
