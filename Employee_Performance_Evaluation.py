@@ -114,7 +114,7 @@ PerformanceRating: Employee performance rating on a scale of 1 to 4 with 1 being
 
 try:
     # Loading data
-    df = pd.read_excel(r"C:\Users\halun\Desktop\Employee Performance Analysis\INX_Future_Inc_Employee_Performance_CDS_Project2_Data_V1.8 (1).xlsx")
+    data = pd.read_excel('INX_Future_Inc_Employee_Performance_CDS_Project2_Data_V1.8 (1).xlsx')
 
     # Sidebar for user options
     st.sidebar.header("Options")
@@ -175,7 +175,7 @@ visualization_type = st.sidebar.selectbox(
 )
 
 # Loading data
-data = pd.read_excel(r"C:\Users\halun\Desktop\Employee Performance Analysis\INX_Future_Inc_Employee_Performance_CDS_Project2_Data_V1.8 (1).xlsx")
+data = pd.read_excel('INX_Future_Inc_Employee_Performance_CDS_Project2_Data_V1.8 (1).xlsx')
 
 # Drop unnecessary columns
 data.drop('EmpNumber', axis=1, inplace=True)
