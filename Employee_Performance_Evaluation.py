@@ -118,7 +118,7 @@ try:
 
     # Sidebar for user options
     st.sidebar.header("Options")
-    columns_to_show = st.sidebar.multiselect("Select columns to display", options=df.columns, default=list(df.columns))
+    columns_to_show = st.sidebar.multiselect("Select columns to display", options=data.columns, default=list(data.columns))
 
     # Ensure there is at least one column selected
     if not columns_to_show:
@@ -129,7 +129,7 @@ try:
 
         # Display the dataframe
         st.write("### Data Preview")
-        st.dataframe(df[columns_to_show].head(rows))
+        st.dataframe(data[columns_to_show].head(rows))
 
         # Display basic information
         st.write("### Data Information")
@@ -140,11 +140,11 @@ try:
 
         # Display descriptive statistics
         st.write("### Descriptive Statistics")
-        st.write(df.describe(include='all'))
+        st.write(data.describe(include='all'))
 
         # Missing values
         st.write("### Missing Values")
-        st.write(df[columns_to_show].isnull().sum())
+        st.write(data[columns_to_show].isnull().sum())
 
 except Exception as e:
     st.error(f"Error loading the file: {e}")
